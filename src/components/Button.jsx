@@ -7,11 +7,11 @@ const Button = ({lable, iconUrl}) => {
       text-lg bg-coral-red text-white rounded-full">
         {lable}
 
-        <img
+       {iconUrl && <img
          src={iconUrl}
          alt="icon"
          className="ml-2 rounded-full w-5 h-5"
-         />
+         /> }
      </button>
   )
 }
