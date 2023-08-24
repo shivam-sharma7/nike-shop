@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="relative flex flex-1 justify-center items-center
        xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-center">
         <img 
-        src={bigShoeImg}
+        src={bigShoeImg} // It is going to render which one is selected
         alt="shose"
         width={610} 
         height={500}
@@ -56,7 +56,7 @@ const Hero = () => {
              <ShoeCard 
              imgUrl={shoe}
              changeBigShoeImage= {(shoe) => setBigShoeImg(shoe)}
-             bigShoeImg={bigShoeImg}
+             bigShoeImg={bigShoeImg} // This will let user know which one is selected
 
              />
             </div>
