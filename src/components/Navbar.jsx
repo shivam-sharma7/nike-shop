@@ -17,7 +17,7 @@ const Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                className="font-montserrat leading-normal hover:underline text-lg text-slate-gray"
               >
                 {item.label}
               </a>

@@ -5,7 +5,7 @@ const Button = ({lable, iconUrl, backgroundColor, borderColor, textColor, fullWi
      ${
        backgroundColor
          ? `${backgroundColor} ${textColor} ${borderColor}`
-         : "bg-coral-red text-white border-coral-red"} rounded-full ${fullWidth &&
+         : "bg-coral-red hover:bg-blue-700 hover:border-blue-500 text-white border-coral-red"} rounded-full ${fullWidth &&
        'w-full'}'}`}
          >
         {lable}
