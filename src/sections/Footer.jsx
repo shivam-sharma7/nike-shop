@@ -19,7 +19,7 @@ const Footer = () => {
         <p className="mt-4 sm:max-w-sm">Get shoes ready to your nearest Nike store. Find your perfect size</p>
          <div className="flex justify-center items-center gap-5 mt-8">
           {socialMedia.map((social) => (
-            <div key={social} className="flex justify-center items-center w-11 h-11 bg bg-white rounded-full cursor-pointer">
+            <div key={social} className="flex justify-center items-center w-11 h-11 bg bg-white hover:bg-blue-500 rounded-full cursor-pointer">
               <img 
               src={social.src} 
               alt={social.alt}
@@ -35,7 +35,7 @@ const Footer = () => {
            <h4 className="text-2xl font-montserrat">{section.title}</h4>
            <ul>
             {section.links.map((link) => (
-              <li key={link} className="mt-3 hover:text-slate-gray cursor-pointer">
+              <li key={link} className="mt-3 hover:text-slate-gray hover:underline cursor-pointer">
                 <a>{link.name}</a>
               </li>
             ))}
@@ -52,7 +52,7 @@ const Footer = () => {
          width={20} 
          height={20} 
          className="rounded-full m-0" />
-         <p>Copyright. All rigths reserved</p>
+         <p>Copyright 2023. All rigths reserved</p>
         </div>
         <p>Terms & Conditions</p>
        </div>
