@@ -1,4 +1,5 @@
-FROM node:18-alpine
+FROM node:20-alpine
+LABEL MAINTAINER="shivam-sharma7 <meshivam81@gmail.com>"
 WORKDIR /app
 COPY package.json .
 RUN npm i
